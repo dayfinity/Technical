@@ -59,3 +59,18 @@ log.archive(signature)
 details = {
     "wallet": owner.address,
     "connected": web.is_connected(),
+    "reference": log.reference,
+}
+
+for key, value in details.items():
+    print(key, value)
+
+print(phrase_a)
+print(phrase_b)
+
+print("Nonce:", request["nonce"])
+print("Gas:", request["gas"])
+print("Timestamp:", log.created)
+print("Interaction stored")
+print("Program finished")
+```
